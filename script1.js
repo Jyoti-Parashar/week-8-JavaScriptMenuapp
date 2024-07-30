@@ -1,14 +1,20 @@
 console.log("hello!");
 
 class Shape {
-    constructor(name, side) {
+    constructor(name, sideA, sideB) {
         this.name = name;
-        this.side = side;
+        this.sideA = sideA;
+        this.sideB = sideB;
 
     }
 
     describe() {
-        return `${this.name} has ${this.side}`;
+        return `${this.name} `;
+        //has ${this.side}
+    }
+
+    calculateArea(){
+        return this.sideA * this.sideB
     }
 
 }
@@ -67,7 +73,8 @@ class Menu { // what drives the application and our choices
     displayShapes() {
         let shapeString = '';
         for (let i = 0; i < this.shapes.length; i++) {
-            shapeString += i + ') ' + this.shapes[i].name + ' has ' + this.shapes[i].side + ' sides ' + '\n';
+            shapeString += i + ') ' + this.shapes[i].name  + " area: " + this.shapes[i].calculateArea() + '\n';
+            //+ ' has ' + this.shapes[i].side + ' sides '
         }
         alert(shapeString);
     }1
@@ -103,10 +110,14 @@ class Menu { // what drives the application and our choices
     1
     createShape() {
         let name = prompt('Enter name for new Shape: ');
+        let sideA = prompt('Enter Side A Length: ');
+        let sideB = prompt('Enter Side B length: ');
         //this.shapes.push(new Shape(name));1
-        let side = prompt('Enter side for new Shape: ');
-        this.shapes.push(new Shape(name, side));
+      //  let side = prompt('Enter side for new Shape: ');
+        this.shapes.push(new Shape(name, sideA, sideB));
+        //this.shapes.push(new Shape(name, side));
     }
+    
     1
 
     viewShape() {
@@ -131,8 +142,9 @@ class Menu { // what drives the application and our choices
         } // validate user input
         }
 
+    
 
-
+    
 }
 
 let menu = new Menu();
