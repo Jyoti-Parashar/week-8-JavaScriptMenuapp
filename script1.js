@@ -1,3 +1,6 @@
+/** 
+***************this is a test Script*****************************************
+
 console.log("hello!");
 
 class Shape {
@@ -151,5 +154,5 @@ let menu = new Menu();
 menu.start();
 
 
-
+*/
 

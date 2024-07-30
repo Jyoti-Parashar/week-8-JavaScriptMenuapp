@@ -1,6 +1,5 @@
-/*
 
-****This is a test script******************
+
 
 console.log("hello!");
 
@@ -149,4 +148,3 @@ menu.start();
 
 
 
-*/
