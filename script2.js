@@ -149,7 +149,9 @@ class Menu {
     
 }
 
+//menu app instantiation
 let menu = new Menu();
+//initiate the app
 menu.start();
 
 
