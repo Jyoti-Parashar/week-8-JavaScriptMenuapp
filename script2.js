@@ -3,13 +3,18 @@
 
 console.log("hello!");
 
+ // this is the base class
+
 class Shape {
+
+    // this is the base class construvtor
     constructor(name) {
         this.name = name;
        // this.side = side;
 
     }
 
+    // this is the base class method
     describe() {
         return `${this.name} `;
         //has ${this.side}
@@ -39,7 +44,8 @@ class Shapes {
 
 }
 
-class Menu { // what drives the application and our choices
+// what drives the application and our choices
+class Menu { 
     constructor() {
         this.shapes = [];
         this.selectedShape = null; // manage one Shape at a time
